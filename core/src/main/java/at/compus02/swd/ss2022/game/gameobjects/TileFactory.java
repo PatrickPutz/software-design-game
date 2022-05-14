@@ -1,5 +1,6 @@
 package at.compus02.swd.ss2022.game.gameobjects;
 
+import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public class TileFactory {
@@ -40,6 +41,11 @@ public class TileFactory {
                 posY += 32;
             }
         }
+    }
 
+    public void drawSingleTile(TileType tileType, SpriteBatch batch, int positionX, int positionY){
+        Tile tile = createTile(tileType);
+        tile.setPosition(positionX, positionY);
+        tile.draw(batch);
     }
 }

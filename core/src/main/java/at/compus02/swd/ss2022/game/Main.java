@@ -54,6 +54,22 @@ public class Main extends ApplicationAdapter {
 		}
 		font.draw(batch, "Hello Game", -220, -220);
 		tileFactory.drawFullBackground(TileType.GRASS, batch);
+		tileFactory.drawSingleTile(TileType.WATER, batch, 0, 0);
+		tileFactory.drawSingleTile(TileType.WATER, batch, 32, 0);
+		tileFactory.drawSingleTile(TileType.WATER, batch, 0, 32);
+		tileFactory.drawSingleTile(TileType.WATER, batch, 32, 32);
+		tileFactory.drawSingleTile(TileType.GRAVEL, batch, 64, 64);
+		tileFactory.drawSingleTile(TileType.GRAVEL, batch, 64, 32);
+		tileFactory.drawSingleTile(TileType.GRAVEL, batch, 64, 0);
+		tileFactory.drawSingleTile(TileType.GRAVEL, batch, 64, -32);
+		tileFactory.drawSingleTile(TileType.GRAVEL, batch, 32, 64);
+		tileFactory.drawSingleTile(TileType.GRAVEL, batch, 0, 64);
+		tileFactory.drawSingleTile(TileType.GRAVEL, batch, -32, 64);
+		tileFactory.drawSingleTile(TileType.GRAVEL, batch, -32, 32);
+		tileFactory.drawSingleTile(TileType.GRAVEL, batch, -32, 0);
+		tileFactory.drawSingleTile(TileType.GRAVEL, batch, -32, -32);
+		tileFactory.drawSingleTile(TileType.GRAVEL, batch, 0, -32);
+		tileFactory.drawSingleTile(TileType.GRAVEL, batch, 32, -32);
 		batch.end();
 	}
 

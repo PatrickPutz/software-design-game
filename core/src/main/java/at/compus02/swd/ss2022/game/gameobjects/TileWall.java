@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 public class TileWall extends Tile{
 
     public TileWall() {
-        image = new Texture("tile_gras.png");
+        image = new Texture("tile_wall.png");
         sprite = new Sprite(image);
     }
 
